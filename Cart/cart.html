@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Cart/cart.css" rel="stylesheet">
+    <link href="https://airave-ui.netlify.app/component.css" rel="stylesheet">
+    <title>Ecommerce</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-brand ml-5">
+            <div class="nav-logo">Logo</div> 
+                <a href="#"><p class="brand">Airave</p></a>
+            </div>
+            <div class="searchbox mr-2">
+                <input type="text" class="search-input">
+                 <i class="bi bi-search search-icon"></i>
+             </div>
+        <ul class="mr-5 gap-1">
+            <li>
+                <a href="#"><div class="badge-wrapper">
+                <i class="bi bi-cart fa-lg"></i>
+                <span class="icon-badge flex-align-center">14</span>
+                </div></a>
+            </li>
+            <li><a href="#"><i class="bi bi-heart"></i></a></li>
+            <li><a href="#"><i class="bi bi-person-fill"></i></a></li>
+        </ul>
+    </div> 
+
+    <div class="cart-container">
+        <div>
+                <div class="card flex box-shadow-light pd-1">
+                    <img class=" img-sm" src="/assest/adidas.jpg"/>
+                    <div class="flex-col card-body ml-1">
+                        <div class="flex gap-3">
+                            <div>
+                                <div class="card-title text-sm">American Tourister </div>
+                                <div class="card-description">Americn tourister bag </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-trash fa-1x text-accent"></i>
+                            </div>
+                        </div>
+                        <div class="price">Rs 2500
+                            <del class="gray-text h6 ml-1">Rs. 5000</del>
+                            <span class="text-accent h6"> (50% oFF)</span>
+                        </div>                            
+                        <div class="quantity-btn mt-1 gap-2">
+                            <button class="btn-icon-round btn-icon-sm box-shadow-bottom">
+                                <i class="fa fa-plus"></i>
+                            </button> 
+                            <span class="bold-text pd--5">1</span>
+                            <button class="btn-icon-round btn-icon-sm box-shadow-bottom">
+                                <i class="fa fa-minus"></i>
+                            </button> 
+                        </div>
+                        <a href="/Wishlist/wishlist.html">
+                            <button class="btn btn-outline-primary width-100 mt-1">
+                                <span>Add to Wishlist</span>
+                                <span class="btn-icon"><i class="bi bi-heart"></i></span>
+                            </button>
+                        </a>
+                    </div> 
+                </div>
+                <div class="card flex box-shadow-light mt-1 pd-1">
+                    <img class=" img-sm" src="/assest/adidas.jpg"/>
+                    <div class="flex-col card-body ml-1">
+                        <div class="flex gap-3">
+                            <div>
+                                <div class="card-title text-sm">American Tourister </div>
+                                <div class="card-description">Americn tourister bag </div>
+                            </div>
+                            <div>
+                                <i class="fa fa-trash fa-1x text-accent"></i>
+                            </div>
+                        </div>
+                        <div class="price">Rs 2500
+                            <del class="gray-text h6 ml-1">Rs. 5000</del>
+                            <span class="text-accent h6"> (50% oFF)</span>
+                        </div>                            
+                        <div class="quantity-btn mt-1 gap-2">
+                            <button class="btn-icon-round btn-icon-sm box-shadow-bottom">
+                                <i class="fa fa-plus"></i>
+                            </button> 
+                            <span class="bold-text pd--5">1</span>
+                            <button class="btn-icon-round btn-icon-sm box-shadow-bottom">
+                                <i class="fa fa-minus"></i>
+                            </button> 
+                        </div>
+                        <a href="/Wishlist/wishlist.html">
+                            <button class="btn btn-outline-primary width-100 mt-1">
+                                <span>Add to Wishlist</span>
+                                <span class="btn-icon"><i class="bi bi-heart"></i></span>
+                            </button>
+                        </a>
+                    </div> 
+                </div>
+        </div>
+        <div class="price-detail bg-light-gray-2">
+            <span class="h5 b-800">Price Details</span><hr>
+            <div class="flex justify-space-between">
+                <span class="">Price</span><span class="cart-value">Rs.4999</span>
+            </div>
+            <div class="flex justify-space-between">
+                <span class="">Discount</span><span class="">Rs.-1999</span>
+            </div>
+            <div class="flex justify-space-between">
+                <span class="">Discount</span><span class="">Rs.-1999</span>
+            </div>     
+            <hr> 
+            <div class="flex justify-space-between">
+                <span class="h5 b-800">Total Amount</span><span class="">Rs.5999</span>
+            </div>      
+            <hr>
+                  <span class="justify-space-between">You save Rs.99 in this order</span>
+            <button class="btn btn-accent width-100">Place Order</button>
+        </div>
+    </div>
+</body>
+</html>
