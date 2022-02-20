@@ -1,10 +1,5 @@
-/* .cart-value{
-    margin-right: 0;
-    margin-left: auto;
-} */
 .cart-container{
     display: flex;
-    /* width: 100vw; */
     gap: 3rem;
     justify-content: space-between;
     flex-direction: row;
@@ -17,6 +12,4 @@
     gap: 1rem;
     padding: 1rem;
     width: 40%;
-
-    /* background-color: rgb(250, 249, 249); */
 }
