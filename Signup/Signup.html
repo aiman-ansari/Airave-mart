@@ -30,32 +30,44 @@
     </nav>   
     <div class="flex-align-center m-5">
         <div class="form box-shadow pd-2 ">
-            <h2 class="mt-1 mb-2 flex-align-center">Login</h2>
+            <h3 class="mt-1 mb-2 flex-align-center">Sign up</h3>
             <div class="form">
                 <div class="input-with-icons ">
-                    <i class="bi bi-person-fill input-icon"></i>
+                    <i class="input-icon"></i>
+                    <input type="text" 
+                    placeholder="Enter your First name"
+                    class="icon-input"/>
+                </div>
+                <div class="input-with-icons ">
+                    <i class="input-icon"></i>
+                    <input type="text" 
+                    placeholder="Enter your Last name"
+                    class="icon-input"/>
+                </div>
+                <div class="input-with-icons ">
+                    <i class="input-icon"></i>
                     <input type="email" 
                     placeholder="Enter your Email"
-                    class="icon-input"
-                    id="email"/>
+                    class="icon-input"/>
+                </div>
+                <div class="input-with-icons ">
+                    <i class="input-icon"></i>
+                    <input type="password" 
+                    placeholder="Enter your Password"
+                    class="icon-input"/>
                 </div>
                 <div class="input-with-icons">
-                    <i class="fa fa-lock input-icon"></i>
+                    <i class="input-icon"></i>
                     <input type="password"
-                    placeholder="Enter your Password"
-                    class="icon-input"
-                    id="password"/>
+                    placeholder="Re-enter your Password"
+                    class="icon-input"/>
                 </div>
                 <p id="error"></p>
-            <div class="gap-2 flex-align-center">
-                <div class="h6"><input type="checkbox" id="checkbox"/><span class="pd--5">Remember me</span></div>
-                <a href="#"><button class="btn-link-primary h6">Forgot your password?</button></a>
-            </div>
             <div class="flex-align-center mt-1">
-                <button class="btn btn-gradient-pink width-100" id="btn-login">Login</button>
+                <button class="btn btn-gradient-pink width-100">Sign Up</button>
             </div>
             <div class="flex-align-center">
-                <a href="/Signup/Signup.html"><button class="btn-link-gray m-1">Create new account</button></a>
+                <a href="/Login/login.html"><button class="btn-link-gray m-1">Already have an account?</button></a>
             </div>
         </div>
         <script src="/Login/login.js"></script>
