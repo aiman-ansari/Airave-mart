@@ -1,0 +1,17 @@
+.filters{
+
+    background-color: yellowgreen;
+    width: 15rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.list-item  li{
+    padding: 0px 10px ;
+}
+.list-item li span{
+    padding: 0px 15px;
+    font-size: 0.8rem;
+}
+.checkbox{
+
+}
