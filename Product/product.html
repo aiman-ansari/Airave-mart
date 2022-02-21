@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Product/product.css" rel="stylesheet">
+    <link href="https://airave-ui.netlify.app/component.css" rel="stylesheet">
+    <title>Ecommerce</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand ml-5">
+            <div class="nav-logo">Logo</div> 
+                <a href="#"><p class="brand">Airave</p></a>
+            </div>
+            <div class="searchbox mr-2">
+                <input type="text" class="search-input">
+                 <i class="bi bi-search search-icon"></i>
+             </div>
+        <ul class="mr-5 gap-1">
+            <li>
+                <a href="/Cart/cart.html"><div class="badge-wrapper">
+                <i class="bi bi-cart fa-lg"></i>
+                <span class="icon-badge flex-align-center">14</span>
+                </div></a>
+            </li>
+            <li><a href="/Wishlist/wishlist.html"><i class="bi bi-heart"></i></a></li>
+            <li><a href="#"><i class="bi bi-person-fill"></i></a></li>
+        </ul>
+    </nav> 
+    <div class="flex gap-2">
+        <div class="filters"> 
+            <div class="flex pd-1">
+                <span>Filter</span>
+                <span class="text-accent ml-5">Clear All</span>
+            </div>
+            <hr>
+            <div class="pd-1">
+                <p class="text-dark">Price</p>
+                <input type="range" min="1" max="10000" value="50" id="priceRange">
+                <p id="price" class="text-gray text-xsm"></p>
+            </div>
+            <hr>
+            <div class="mb-1 mt-1">
+                <ul class="list-item">
+                    <li>Categories</li>
+                    <li><input type="checkbox" ></input><span>Jackets</span></li>
+                    <li><input type="checkbox" ></input><span>Shoes</span></li>
+                    <li><input type="checkbox" ></input><span>Trolly</span></li>
+                    <li><input type="checkbox" ></input><span>Bags</span></li>
+                    <li><input type="checkbox" ></input><span>Shirts</span></li>
+                </ul>
+                </div>
+            <hr>
+            <div class="mt-1 mb-1">    
+                <ul class="list-item">
+                    <li>Rating</li>
+                    <li><input type="radio" name="rating" id="5-star" ></input><span>5 star</span></li>
+                    <li><input type="radio" name="rating" id="4-star" ></input><span>4 star</span></li>
+                    <li><input type="radio" name="rating" id="3-star" ></input><span>3 star</span></li>
+                    <li><input type="radio" name="rating" id="2-star" ></input><span>2 star</span></li>
+                    <li><input type="radio" name="rating" id="1-star" ></input><span>1 star</span></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="mt-1">    
+                <ul class="list-item">
+                    <li>Sort By</li>
+                    <li><input type="radio" name="rating" id="high-to-low" ></input><span>Price - High to Low</span></li>
+                    <li><input type="radio" name="rating" id="low-to-high" ></input><span>Price - Low to high</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-col">
+        <div class="grid-three-items product-container">
+            <div class="grid-item-1 w-200 ">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/jacket.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">Jacket</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality bag.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000</div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="grid-item-2 w-200 ">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/card-image.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">American Tourister</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality bag.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="grid-item-3 w-200 ">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/adidas.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">Adidas</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality shoes.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>     
+        </div>
+        <div class="grid-three-items product-container">
+            <div class="grid-item-1">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/jacket.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">Jacket</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality bag.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000</div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="grid-item-2 w-200 ">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/card-image.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">American Tourister</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality bag.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="grid-item-3 w-200 ">
+                <div class="card box-shadow-bottom">
+                    <img src="/assest/adidas.jpg" class="img-md"/>
+                    <div class="card-body">
+                        <div class="flex justify-space-between">
+                            <div class="card-title ">Adidas</div>
+                            <i class="bi bi-heart wishlist"></i>
+                        </div>
+                        <div class="card-description">This is a new quality shoes.</div>
+                        <div class="rating">    
+                            <ul>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                        <a href="/Cart/cart.html">
+                            <button class="btn btn-primary width-100 mt-1">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>                   
+            </div>     
+        </div>
+    </div>
+    <script src="/Product/Product.js"></script>
+</body>
+</html>
