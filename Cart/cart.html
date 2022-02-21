@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/Cart/cart.css" rel="stylesheet">
+    <link href="/landing page/index.css" rel="stylesheet">
     <link href="https://airave-ui.netlify.app/component.css" rel="stylesheet">
     <title>Airave Mart</title>
 </head>
 <body>
     <nav>
         <div class="nav-brand ml-5">
-            <div class="nav-logo">Logo</div> 
-                <a href="#"><p class="brand">Airave</p></a>
-            </div>
-            <div class="searchbox mr-2">
-                <input type="text" class="search-input">
-                 <i class="bi bi-search search-icon"></i>
-             </div>
+            <a href="/landing page/index.html">
+                <span class="text-accent">Airave</span>
+                <span class="text-light">Mart</span>
+            </a>
+        </div>
+        <div class="searchbox mr-2">
+            <input type="text" class="search-input">
+            <i class="bi bi-search search-icon"></i>
+        </div>
         <ul class="mr-5 gap-1">
             <li>
                 <a href="/Cart/cart.html"><div class="badge-wrapper">
@@ -26,10 +29,15 @@
                 </div></a>
             </li>
             <li><a href="/Wishlist/wishlist.html"><i class="bi bi-heart"></i></a></li>
-            <li><a href="#"><i class="bi bi-person-fill"></i></a></li>
+            <div class="dropdown">
+                <li><i class="bi bi-person-fill"></i></li>
+                <div class="dropdown-content">
+                    <a href="/Login/login.html">Login</a>
+                    <a href="/landing page/index.html">Logout</a>
+                </div>
+            </div>
         </ul>
-    </nav> 
-
+    </nav>
     <div class="cart-container">
         <div>
                 <div class="card flex box-shadow-light pd-1">
